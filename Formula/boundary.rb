@@ -5,21 +5,21 @@
 class Boundary < Formula
   desc "Pre-execution action boundary for routed AI-agent tool calls"
   homepage "https://github.com/Fulcrum-Governance/Fulcrum-Boundary"
-  version "0.10.1"
+  version "0.11.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Fulcrum-Governance/Fulcrum-Boundary/releases/download/v0.10.1/boundary_0.10.1_darwin_amd64_static-nocgo.tar.gz"
-      sha256 "bbeda621aea3fa6bb1c1b7ce25b66fa4a933ead8c1d01b0a509659083f80b6b2"
+      url "https://github.com/Fulcrum-Governance/Fulcrum-Boundary/releases/download/v0.11.0/boundary_0.11.0_darwin_amd64_static-nocgo.tar.gz"
+      sha256 "b90384148382807397b8e7a5ea151f6bc3da902bd3964470387d3b6139d81aa4"
 
       define_method(:install) do
         bin.install "boundary"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Fulcrum-Governance/Fulcrum-Boundary/releases/download/v0.10.1/boundary_0.10.1_darwin_arm64_static-nocgo.tar.gz"
-      sha256 "b302f00acfba5c787829a5a61503e090eba4abb43572569684981dd28c13bf95"
+      url "https://github.com/Fulcrum-Governance/Fulcrum-Boundary/releases/download/v0.11.0/boundary_0.11.0_darwin_arm64_static-nocgo.tar.gz"
+      sha256 "7b87532d10f90fb02ca0ae94bc37bcaf071ee2af4b263d3cb7bd848a12ff71f1"
 
       define_method(:install) do
         bin.install "boundary"
@@ -29,15 +29,15 @@ class Boundary < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Fulcrum-Governance/Fulcrum-Boundary/releases/download/v0.10.1/boundary_0.10.1_linux_amd64_static-nocgo.tar.gz"
-      sha256 "a0cfa110b8e38df8366b6e4609769fa741378d78f4adcb6d73c9166a10e7fb67"
+      url "https://github.com/Fulcrum-Governance/Fulcrum-Boundary/releases/download/v0.11.0/boundary_0.11.0_linux_amd64_static-nocgo.tar.gz"
+      sha256 "9944af6b2012a81e9441e28c28221e966d69f3b8ccea22c8d64c017824914d25"
       define_method(:install) do
         bin.install "boundary"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Fulcrum-Governance/Fulcrum-Boundary/releases/download/v0.10.1/boundary_0.10.1_linux_arm64_static-nocgo.tar.gz"
-      sha256 "ceef6e617ef5557f19b5d1b3722e06b8c4099b6f9b30191adbdca9eb11bff6b5"
+      url "https://github.com/Fulcrum-Governance/Fulcrum-Boundary/releases/download/v0.11.0/boundary_0.11.0_linux_arm64_static-nocgo.tar.gz"
+      sha256 "cfc6b1aaeed891db63f8e6bd5b0e5688e43b8df2d5b12bce72a40660af15c05c"
       define_method(:install) do
         bin.install "boundary"
       end
